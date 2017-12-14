@@ -1,0 +1,148 @@
+body {
+	background: #A2A2D0;
+}
+
+#container {
+	background: #F1F3CE;
+	max-width: 600px;
+	margin: auto;
+	height: 200px;
+	border-radius: 20px;
+	padding: 10px 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: relative;
+}
+
+/* creates the larger triangle */
+#container:before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:40px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent #F1F3CE;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the smaller triangle */
+#container:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:70px;
+  border-width:0 0 30px 20px;
+  border-style:solid;
+  border-color:transparent #F1F3CE;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+#stripe {
+	max-width: 600px;
+	margin: 10px auto;
+	height: 50px;
+}
+
+#quotes {
+	font-size: 3.0rem;
+	top: 20px;
+	position: absolute;
+	transition: all 1s;
+}
+
+#person {
+	font-weight: bold;
+	float: right;
+	bottom: -60px;
+	right: 25px;
+	font-size: 1.5rem;
+	letter-spacing: 0.5px;
+	position: absolute;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+h1 {
+	font-weight: bold;
+	max-width: 400px;
+	text-align: center;
+	padding: 20px 0;
+	margin: 30px auto 0 auto;
+	text-transform: uppercase;
+	font-family: 'Merriweather', serif;
+}
+
+p {
+	text-align: center;
+	height: 200px;
+	font-size: 3.0em;
+	position: absolute;
+	max-width: 600px;
+	top: -10px;
+	opacity: 1;
+	transition: all 2s;
+}
+
+p.hide {
+	opacity: 0;
+}
+
+#quotes.hide {
+	opacity: 0;
+}
+
+button {
+	height: 100%;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+	outline: none;
+	border-radius: 20px;
+	font-family: 'Merriweather', serif;
+	padding: 0 10px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	font-weight: bold;
+}
+
+#newBtn:active {
+	box-shadow: inset 0 0 20px #8E8E80;
+	background: linear-gradient(#C4BFA1, #F1F3CE);
+}
+
+#newBtn {
+	background: linear-gradient(#F1F3CE, #C4BFA1);
+}
+
+.mode {
+	background: linear-gradient(#FE6F5E, #C97066);
+}
+
+.mode:active {
+	box-shadow: inset 0 0 20px #724540;
+	background: linear-gradient(#FE6F5E, #9B605A);
+}
+
+.selected {
+	box-shadow: inset 0 0 20px #724540;
+	border: 2px solid #9B605A;
+}
+
+#twitter {
+	font-size: 40px;
+	left: 15px;
+	bottom: 10px;
+	position: absolute;
+	color: #A2A2D0;
+}
+
+
